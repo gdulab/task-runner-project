@@ -136,12 +136,13 @@
             transform: translate(-50%, -50%);
             i {
                 color: goldenrod;
-                font-size: 42px;
+                font-size: 36px;
+                line-height: 60px;
+                width: 60px;
+                height: 60px;
                 border-style: solid;
                 border-color: goldenrod;
                 border-radius: 50%;
-                padding: 12px;
-                /*ikony mają różne szerokości, przez co ich bordery są różnych rozmiarów. jak zrobić, żeby były takie same? */
             }
             p{
                 font-size: 15px;
@@ -188,4 +189,37 @@
             }
         }
     }
+}
+
+/* footer */
+footer {
+    font-size: 0;
+    margin: 48px 0;
+    text-align: center;
+    ul {
+        padding: 0;
+    }
+    li {
+        display: inline-block;
+        background-color: black;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        margin: 0 6px;
+        position: relative;
+        transition: all 2s;
+        &:hover {
+                transform: scale(1.2);
+        }
+        i
+        {
+            font-size: 20px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+
+        }
+}
 }
