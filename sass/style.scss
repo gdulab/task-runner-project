@@ -223,3 +223,23 @@ footer {
         }
 }
 }
+
+/* media */
+@media (max-width: 767px) {
+    .splash {
+        height: 100vh;
+    }
+    .services-inner {
+        flex-direction: column;
+        .services-card {
+            margin: auto;
+            width: 50%;
+        }
+    }
+    
+    .portfolio-inner{
+        .row {
+            flex-direction: column;
+        }
+    }
+}
